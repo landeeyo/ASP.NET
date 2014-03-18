@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ASP.NET_Playground.Master.Master" %>
+
+<%@ Register Src="~/Controls/CtrlMenu.ascx" TagPrefix="Ctrl" TagName="Menu" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:Literal ID="litTitle" runat="server"></asp:Literal></title>
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server">
+        <Ctrl:Menu ID="ctrlMenu" runat="server" />
+    </asp:ContentPlaceHolder>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

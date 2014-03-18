@@ -57,12 +57,52 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\CtrlBasicControls.ascx" />
+    <Content Include="Controls\CtrlMenu.ascx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Pages\WebFormsControls.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\CtrlBasicControls.ascx.cs">
+      <DependentUpon>CtrlBasicControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CtrlBasicControls.ascx.designer.cs">
+      <DependentUpon>CtrlBasicControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtrlMenu.ascx.cs">
+      <DependentUpon>CtrlMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CtrlMenu.ascx.designer.cs">
+      <DependentUpon>CtrlMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WebFormsControls.aspx.cs">
+      <DependentUpon>WebFormsControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\WebFormsControls.aspx.designer.cs">
+      <DependentUpon>WebFormsControls.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Master\Master.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
