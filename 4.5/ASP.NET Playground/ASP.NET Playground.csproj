@@ -60,6 +60,8 @@
     <Content Include="Controls\CtrlBasicControls.ascx" />
     <Content Include="Controls\CtrlMenu.ascx" />
     <Content Include="Index.aspx" />
+    <Content Include="Pages\Cookies.aspx" />
+    <Content Include="Pages\ViewState.aspx" />
     <Content Include="Pages\WebFormsControls.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -91,6 +93,20 @@
     </Compile>
     <Compile Include="Master\Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cookies.aspx.cs">
+      <DependentUpon>Cookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cookies.aspx.designer.cs">
+      <DependentUpon>Cookies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewState.aspx.cs">
+      <DependentUpon>ViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewState.aspx.designer.cs">
+      <DependentUpon>ViewState.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\WebFormsControls.aspx.cs">
       <DependentUpon>WebFormsControls.aspx</DependentUpon>
